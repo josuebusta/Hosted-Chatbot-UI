@@ -3,6 +3,7 @@ import { ServerRuntime } from "next"
 import OpenAI from "openai"
 
 export const runtime: ServerRuntime = "edge"
+export const preferredRegion = ["iad1", "cle1", "pdx1", "sfo1"]
 
 export async function GET() {
   try {
